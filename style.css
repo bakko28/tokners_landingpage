@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'AzoSans'; 
+    font-weight: 400;
+	src: url(fonts/AzoSans-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'AzoSans'; 
+    font-weight: 300;
+	src: url(fonts/AzoSans-Light.ttf); 
+}
+
+@font-face {
+	font-family: 'AzoSans'; 
+    font-weight: 500;
+	src: url(fonts/AzoSans-Medium.ttf); 
+}
+
+@font-face {
+	font-family: 'AzoSans'; 
+    font-weight: 700;
+	src: url(fonts/AzoSans-Bold.ttf); 
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'AzoSans';
+}
+
+
+body {
+    overflow-x: hidden;
+    background-color: #F7F5F9;
+    display: grid;
+    gap: 4px;
+    grid-template-rows: 40px auto 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header' 'main' 'footer' 'nav';
+    height: 100vh;
+}
+
+a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px blue solid;
+}
+
+header nav {
+    display: flex;
+    margin-right: 36px;
+    align-items: center;
+}
+
+header nav a {
+    margin: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px #fff solid;
+}
+
+.link-box {
+    margin-right: 100px;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box button {
+    background: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px #fff solid;
+    margin-right: 30px;
+}
+
+.login-box button:nth-child(2) {
+    border-radius: 52px;
+    width: 147px;
+    padding: 17px 30px;
+    background: #fff;
+    color: #191B21;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.logo-img {
+    margin: 45px 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border: 2px #000 solid;
+}
+
+.page1scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info-box {
+    margin-left: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main-info-box p {
+    font-weight: 500px;
+    font-size: 18px;
+    color: #2278D4;
+    margin-bottom: 40px;
+}
+
+.main-info-box p:nth-child(3) {
+    font-weight: 300;
+    font-size: 16px;
+    color: #727278;
+    margin-bottom: 40px;
+    width: 510px;
+}
+
+.main-info-box h4 {
+    width: 560px;
+    font-weight: 510px;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.main-info-box button {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 17px 30px;
+    border-radius: 52px;
+    background-color: #22A75D;
+}
+
