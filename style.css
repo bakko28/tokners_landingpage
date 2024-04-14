@@ -75,7 +75,6 @@ header {
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    border: 2px blue solid;
 }
 
 header nav {
@@ -128,7 +127,6 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    border: 2px #000 solid;
 }
 
 .page1scroll {
@@ -179,7 +177,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #000 solid;
 }
 
 .card-container {
@@ -251,6 +248,7 @@ main {
 
 .cardbox-background {
     top: 1400px;
+    left: 0px;
     z-index: -1;
     position: absolute;
 }
@@ -260,8 +258,7 @@ main {
     right: 240px;
     display: flex;
     justify-content: space-evenly;
-    margin: 170px 0px 0px 143px;
-    align-items: center;
+    margin: 170px 0px 301px 143px;
 }
 
 .cardbox-info .quetion-box {
@@ -312,8 +309,194 @@ main {
     font-size: 16px;
 }
 
+.airplanelist-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
 
+.airplane {
+    margin-right: 40px;
+}
 
+.airplanelist-box img:nth-child(2) {
+    margin: -50px 476px 50px 184px;
+}
+
+.topinfo-box {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.bottominfo-box {
+    align-items: start;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+    right: 20px;
+    display: flex;
+}
+
+.bottominfo-box .textbox:nth-child(3) {
+    width: 350px;
+}
+
+.textbox li {
+    text-align: start;
+    margin: 8px;
+    color: #727278;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.q2021box p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #22A75D;
+}
+
+.q2021box p:nth-child(2){
+    font-weight: 500;
+    font-size: 36px;
+    color: #191B21;
+    margin-right: 316px;
+}
+
+.q2021box:nth-child(1) {
+    margin-left: 173px;
+}
+
+.q2021box:nth-child(4) p:nth-child(2){
+    margin-right: 133px;
+}
+
+ol {
+    counter-reset: item; 
+}
+
+ol li {
+    counter-increment: item;
+    list-style: none; 
+}
+
+ol li::before {
+    content: counter(item, decimal-leading-zero) ". ";
+    margin-right: 10px; 
+    color: #2278D4;
+}
+
+.toknerscoming-box {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.toknerscoming-box img:nth-child(1) {
+    z-index: -1;
+    position: absolute;
+    left: -3px;
+}
+
+.toknerscoming-box img:nth-child(3) {
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+
+.textinfobox {
+    width: 600px;
+    margin-left: 153px;
+}
+
+.textinfobox p {
+    color: #727278;
+    margin: 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.textinfobox p:nth-child(1) {
+    color: #000;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.textinfobox p:nth-child(2) {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.textinfobox p:nth-child(5) {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .topfooter-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+footer .topfooter-box a {
+    margin: 0px 66px 0px 66px;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 2px #fff solid;
+}
+
+footer .topfooter-box p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #727278;
+}
+
+footer .bottomfooter-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .bottomfooter-box img:nth-child(1) {
+    z-index: 2;
+    position: relative;
+    top: 0px;
+}
+
+footer .bottomfooter-box img:nth-child(2) {
+    margin: 0px 380px 0px 395px;
+}
+
+footer .bottomfooter-box .copwrite-box {
+    text-align: end;
+    color: #fff;
+}
+
+footer .bottomfooter-box .copwrite-box a:nth-child(2) {
+    margin: 8px;
+    color: #727278;
+}
+
+footer img:nth-child(1) {
+    z-index: -2;
+    top: 4400px;
+    left: -2px;
+    position: absolute;
+}
 
 
 
